@@ -7,7 +7,9 @@ public class Player : MonoBehaviour {
 	[SerializeField] float MovementSpeed=5.0f;
 	[SerializeField] float RotationSpeed=45.0f;
 	[SerializeField] GameObject myHand;
+
 	public float DistanceHand=0.4f;
+
 	private bool canGrapObject = true;
 	private bool isTarget=false;
 	private Vector3 mousePosition;
@@ -32,6 +34,7 @@ public class Player : MonoBehaviour {
 		mousePosition.z = DistanceHand;
 		myHand.transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
 	}
+
 	void MovePlayer()
 	{
 		if (Input.GetKey (KeyCode.W)) {
