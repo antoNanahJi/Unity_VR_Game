@@ -686,6 +686,7 @@ MonoBehaviour:
   MovementSpeed: 5
   RotationSpeed: 45
   myHand: {fileID: 1408587064}
+  DistanceHand: 0.4
   Distance: 10
 --- !u!1001 &800678871
 Prefab:
