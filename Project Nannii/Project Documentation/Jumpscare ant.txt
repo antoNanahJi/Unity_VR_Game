@@ -1,0 +1,2 @@
+The player will be walking through one of the hallways, when the room started getting darker and suddnly the phone start ringing, the player can choose to pick the phone up
+or ignore it. If ignored it will go away after few secs, but if picked up the kid will tell him "Remember your sins" then it switches to dail up internet audio 
