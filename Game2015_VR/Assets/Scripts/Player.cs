@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
 	[SerializeField] GameObject myHand;
 
 	public float DistanceHand=0.4f;
+	public bool isSneaking;
 
 	private bool canGrapObject = true;
 	private bool isTarget=false;
