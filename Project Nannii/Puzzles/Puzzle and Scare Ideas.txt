@@ -1,6 +1,11 @@
 ~Quest: Unchained Melody~
 
-The player is required to play a tune that he hears on a glockenspiel/music box. Trying to play the church organ will cause it to struggle to produce a sound. Attempting to investigate the maitenence hatch reveals that it has corroded shut. The player must a chemical solution to unstick the hatch. This can be done by collecting bile and aqua regia from the infirmary and combining them. After opening the hatch, the player finds either a quest item (doll/toy) or something morbid jamming the organ pipes.
+The player is required to play a tune that he hears on a glockenspiel/music box. 
+Trying to play the church organ will cause it to struggle to produce a sound. 
+Attempting to investigate the maitenence hatch reveals that it has corroded shut. 
+The player must a chemical solution to unstick the hatch. 
+This can be done by collecting bile and aqua regia from the infirmary and combining them. 
+After opening the hatch, the player finds either a quest item (doll/toy) or something morbid jamming the organ pipes.
 
 ~Scare Scenes~
 
