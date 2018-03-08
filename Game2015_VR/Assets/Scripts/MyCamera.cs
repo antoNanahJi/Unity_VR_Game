@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MyCamera : MonoBehaviour {
-	[SerializeField]float speed=1.0f;
+	[SerializeField]float speed=90.0f;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,6 +13,6 @@ public class MyCamera : MonoBehaviour {
 	void Update () {
 		float newRotationY = transform.localEulerAngles.y + Input.GetAxis ("Mouse X")*speed;
 		float newRotationX = transform.localEulerAngles.x - Input.GetAxis ("Mouse Y")*speed;
-		this.gameObject.transform.localEulerAngles = new Vector3 (newRotationX,newRotationY,0.0f);
+		this.gameObject.transform.localEulerAngles = new Vector3 (newRotationX,0.0f,0.0f);
 	}
 }
