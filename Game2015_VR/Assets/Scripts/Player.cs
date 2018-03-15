@@ -8,6 +8,7 @@ public class Player : MonoBehaviour {
 	[SerializeField] float RotationSpeed=45.0f;
 	[SerializeField] GameObject myHand;
 
+	public LineRenderer Lazer;
 	public float DistanceHand=0.4f;
 	public bool isSneaking;
 
@@ -21,6 +22,8 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		mHit = new RaycastHit ();
+		Lazer.enabled = false;
+
 	}
 
 	// Update is called once per frame
@@ -70,16 +73,36 @@ public class Player : MonoBehaviour {
 				myHand.transform.position.y,
 				myHand.transform.position.z);
 		}
-		if (Input.GetMouseButton (1)) {
+	
+		if (Input.GetKeyDown (KeyCode.Space)) {
 			if (!canGrapObject) {
-				if (Physics.Raycast (mRay, out mHit,Distance)) {
-					Target.transform.position = new Vector3 (mHit.transform.position.x,
-						mHit.transform.position.y,
-						mHit.transform.position.z);
-					isTarget = false;
-					canGrapObject = true;
-				}
+				Lazer.enabled = true;
+				Lazer.SetPosition (0, myHand.transform.position);
+				Lazer.SetPosition (1, myHand.transform.position + (myHand.transform.up * -1.0f));
+			}
+		}
+		if (Input.GetKeyUp (KeyCode.Space)) {
+			if (!canGrapObject) {
+				Lazer.enabled = false;
+				Target.transform.position = new Vector3 (Lazer.GetPosition (1).x,
+					Lazer.GetPosition (1).y,
+					Lazer.GetPosition (1).z);
+				isTarget = false;
+				canGrapObject = true;
+			}
+		}
+
+		if (Input.GetMouseButton (1)) 
+		{
+			if (!canGrapObject)
+			{
+				isTarget = false;
+				Target.transform.position = new Vector3 (myHand.transform.position.x,
+					myHand.transform.position.y,
+					myHand.transform.position.z);
+				canGrapObject = true;
 			}
 		}
 	}
+
 }
