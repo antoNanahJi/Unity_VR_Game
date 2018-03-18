@@ -5,11 +5,11 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
 	[SerializeField] float MovementSpeed=5.0f;
-	[SerializeField] float RotationSpeed=45.0f;
+	[SerializeField] float RotationSpeed=2.0f;
 	[SerializeField] GameObject myHand;
 
 	public LineRenderer Lazer;
-	public float DistanceHand=0.4f;
+	public float DistanceHand= 10.0f;
 	public bool isSneaking;
 
 	private bool canGrapObject = true;
@@ -19,6 +19,9 @@ public class Player : MonoBehaviour {
 	Ray mRay;
 	RaycastHit mHit;
 	[SerializeField] float Distance=10.0f;
+
+	float distanceFromHandZ =  0.2f;
+	float distanceFromHandY =  0.2f;
 	// Use this for initialization
 	void Start () {
 		mHit = new RaycastHit ();
@@ -35,8 +38,18 @@ public class Player : MonoBehaviour {
 	void HandFollowMouse()
 	{
 		mousePosition = Input.mousePosition;
-		mousePosition.z = DistanceHand;
+		mousePosition.z += DistanceHand;
 		myHand.transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
+
+
+		if (isTarget) {
+
+			mousePosition = Input.mousePosition;
+			mousePosition.z += DistanceHand + 0.2f ;
+			Target.transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
+	
+		}
+
 	}
 
 	void MovePlayer()
@@ -48,18 +61,21 @@ public class Player : MonoBehaviour {
 			transform.Translate (Vector3.forward*-MovementSpeed*Time.deltaTime);
 		}
 		if (Input.GetKey (KeyCode.A)) {
-			transform.Rotate (Vector3.up*-RotationSpeed*Time.deltaTime);
+			transform.Rotate (Vector3.up*-RotationSpeed);
 		}
 		if (Input.GetKey (KeyCode.D)) {
-			transform.Rotate (Vector3.up*RotationSpeed*Time.deltaTime);
+			transform.Rotate (Vector3.up*RotationSpeed);
 		}
 	}
 	void GrabDropObject()
 	{
-		mRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+		
 		if (Input.GetMouseButton (0)) {
+			
 			if (canGrapObject) {
+				mRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 				if (Physics.Raycast (mRay, out mHit, Distance)) {
+					//Debug.DrawLine(mRay.origin, mHit.point);
 					if (mHit.transform.gameObject.tag == "ObjectToGrap") {
 						Target = mHit.transform.gameObject;
 						isTarget = true;
@@ -68,11 +84,7 @@ public class Player : MonoBehaviour {
 				}
 			}
 		}
-		if (isTarget) {
-			Target.transform.position = new Vector3 (myHand.transform.position.x,
-				myHand.transform.position.y,
-				myHand.transform.position.z);
-		}
+
 	
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			if (!canGrapObject) {
@@ -97,9 +109,9 @@ public class Player : MonoBehaviour {
 			if (!canGrapObject)
 			{
 				isTarget = false;
-				Target.transform.position = new Vector3 (myHand.transform.position.x,
-					myHand.transform.position.y,
-					myHand.transform.position.z);
+				mousePosition = Input.mousePosition;
+				mousePosition.z += DistanceHand + 0.2f ;
+				Target.transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
 				canGrapObject = true;
 			}
 		}
