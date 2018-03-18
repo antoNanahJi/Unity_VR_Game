@@ -1,10 +1,6 @@
 fileFormatVersion: 2
 guid: 08e091500e68ded43b4abfb1b3f718d0
 ModelImporter:
-<<<<<<< HEAD
-  serializedVersion: 19
-  fileIDToRecycleName:
-=======
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
@@ -27,13 +23,10 @@ ModelImporter:
     3300002: buch_0001b
     3300004: buch_0001c
     3300006: buch_0001d
->>>>>>> 9d50f2c4a02c24c3ea0259216541cf027e49d61d
     4300000: buch_0001b
     4300002: buch_0001a
     4300004: buch_0001c
     4300006: buch_0001d
-<<<<<<< HEAD
-=======
     11100000: //RootNode
   externalObjects:
   - first:
@@ -41,15 +34,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: book
     second: {fileID: 2100000, guid: f3d87070dc9fb4246b3a788982ab59e8, type: 2}
->>>>>>> 9d50f2c4a02c24c3ea0259216541cf027e49d61d
   materials:
     importMaterials: 1
     materialName: 2
     materialSearch: 1
-<<<<<<< HEAD
-=======
     materialLocation: 0
->>>>>>> 9d50f2c4a02c24c3ea0259216541cf027e49d61d
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -62,20 +51,14 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-<<<<<<< HEAD
-=======
     importAnimatedCustomProperties: 0
->>>>>>> 9d50f2c4a02c24c3ea0259216541cf027e49d61d
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-<<<<<<< HEAD
-=======
     extraUserProperties: []
->>>>>>> 9d50f2c4a02c24c3ea0259216541cf027e49d61d
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -83,25 +66,18 @@ ModelImporter:
     globalScale: 0.01
     meshCompression: 0
     addColliders: 0
-<<<<<<< HEAD
-    importBlendShapes: 1
-=======
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
->>>>>>> 9d50f2c4a02c24c3ea0259216541cf027e49d61d
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-<<<<<<< HEAD
-=======
     preserveHierarchy: 0
     indexFormat: 1
->>>>>>> 9d50f2c4a02c24c3ea0259216541cf027e49d61d
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -111,10 +87,7 @@ ModelImporter:
     normalSmoothAngle: 41
     normalImportMode: 1
     tangentImportMode: 4
-<<<<<<< HEAD
-=======
     normalCalculationMode: 0
->>>>>>> 9d50f2c4a02c24c3ea0259216541cf027e49d61d
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
