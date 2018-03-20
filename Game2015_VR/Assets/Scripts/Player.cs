@@ -75,7 +75,6 @@ public class Player : MonoBehaviour {
 			if (canGrapObject) {
 				mRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 				if (Physics.Raycast (mRay, out mHit, Distance)) {
-					//Debug.DrawLine(mRay.origin, mHit.point);
 					if (mHit.transform.gameObject.tag == "ObjectToGrap") {
 						Target = mHit.transform.gameObject;
 						isTarget = true;
