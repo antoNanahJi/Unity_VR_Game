@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 132
+  controlID: 153
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1361
     height: 947
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 47
+  controlID: 69
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 1361
     height: 537
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 48
+  controlID: 70
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 409
     height: 537
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -254,8 +254,8 @@ MonoBehaviour:
     y: 0
     width: 559
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -367,9 +367,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9a700000
-    m_LastClickedID: 28826
-    m_ExpandedIDs: 948ef3ffaec6f3ff8823f4ffba29f4ffcc4df4ff145dfaff36eafdff74eafdff5402feff0000000010750000c28000004c890000
+    m_SelectedIDs: a044feff
+    m_LastClickedID: -113504
+    m_ExpandedIDs: 9844feffa044feff029bfeff049bfeff9efbffff0000000002490000d24a0000b64c00007e4d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -425,9 +425,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 21.646116, y: -8.28026, z: 39.850273}
+    m_Target: {x: -7.084919, y: -1.1722667, z: 54.31373}
     speed: 2
-    m_Value: {x: 21.646116, y: -8.28026, z: 39.850273}
+    m_Value: {x: -7.084919, y: -1.1722667, z: 54.31373}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -451,13 +451,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.07788394, y: 0.21851419, z: -0.01749775, w: 0.9725634}
+    m_Target: {x: -0.03191091, y: -0.01337281, z: 0.00042521014, w: -0.9994012}
     speed: 2
-    m_Value: {x: 0.07788394, y: 0.21851419, z: -0.01749775, w: 0.9725634}
+    m_Value: {x: -0.03191091, y: -0.01337281, z: 0.00042521014, w: -0.9994012}
   m_Size:
-    m_Target: 72.88981
+    m_Target: 75.86167
     speed: 2
-    m_Value: 72.88981
+    m_Value: 75.86167
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -544,10 +544,10 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 204}
-    m_SelectedIDs: 68ed0000
-    m_LastClickedID: 60776
-    m_ExpandedIDs: 000000004c5f00006c6200007462000070640000c8640000ca6400004c66000078680000bc680000426b00005c6b00009c6c0000ac6c0000046e0000d06f0000047000000e7000002cad0000c4b400008cb5000016d1000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 351}
+    m_SelectedIDs: e0290000
+    m_LastClickedID: 10720
+    m_ExpandedIDs: 000000005428000076280000ca2d0000a82e0000ac2e0000783100008a310000103700008e370000aa3a0000363c0000823c0000083e00002e3e0000dc3f0000104000001441000070450000d84600007a4700008847000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,7 +575,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004c5f00006c6200007462000070640000ca6400004c6600008467000078680000bc680000426b00005c6b00009c6c0000ac6c0000046e0000d06f0000047000000e700000
+    m_ExpandedIDs: 000000005428000076280000ca2d0000a82e0000ac2e0000783100008a310000103700008e370000aa3a0000363c0000823c0000083e00002e3e0000dc3f0000104000001441000070450000d84600007a47000088470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
