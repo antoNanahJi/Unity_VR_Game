@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - ObjectToGrap
+  - sunSpot
+  - starSpot
+  - moonSpot
+  - moonToy
+  - sunToy
+  - starToy
   layers:
   - Default
   - TransparentFX
