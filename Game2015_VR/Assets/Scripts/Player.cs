@@ -105,6 +105,14 @@ public class Player : MonoBehaviour {
 
 		if (Input.GetMouseButton (1)) 
 		{
+			Lazer.enabled = true;
+			mRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+			if (Physics.Raycast (mRay, out mHit, Distance))
+			{
+				Lazer.SetPosition (0, mRay.origin);
+				Lazer.SetPosition (1, mHit.point);				
+			}
+
 			if (!canGrapObject)
 			{
 				isTarget = false;
@@ -113,6 +121,11 @@ public class Player : MonoBehaviour {
 				Target.transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
 				canGrapObject = true;
 			}
+		}
+
+		if (Input.GetMouseButtonUp (1)) 
+		{
+			Lazer.enabled = false;
 		}
 	}
 
