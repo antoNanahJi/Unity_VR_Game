@@ -11,6 +11,9 @@ TagManager:
   - moonToy
   - sunToy
   - starToy
+  - Interactable
+  - CanGrab
+  - Interactable;CanGrab
   layers:
   - Default
   - TransparentFX
