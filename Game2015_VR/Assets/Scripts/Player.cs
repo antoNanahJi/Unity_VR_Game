@@ -6,11 +6,17 @@ public class Player : MonoBehaviour {
 
 	[SerializeField] float MovementSpeed=5.0f;
 	[SerializeField] float RotationSpeed=2.0f;
+	[SerializeField]float speed=90.0f;
 	[SerializeField] GameObject myHand;
+	[SerializeField] GameObject laserPointer;
+	[SerializeField] Camera     playerCamera;
 
 	public LineRenderer Lazer;
 	public float DistanceHand= 10.0f;
+	float newRotationX;
 	public bool isSneaking;
+
+	Vector3 hitPosition;
 
 	private bool canGrapObject = true;
 	private bool isTarget=false;
@@ -41,6 +47,7 @@ public class Player : MonoBehaviour {
 		mousePosition.z += DistanceHand;
 		myHand.transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
 
+		myHand.transform.rotation = playerCamera.transform.rotation;
 
 		if (isTarget) {
 
@@ -107,25 +114,30 @@ public class Player : MonoBehaviour {
 		{
 			Lazer.enabled = true;
 			mRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-			if (Physics.Raycast (mRay, out mHit, Distance))
+			Lazer.SetPosition (0, laserPointer.transform.position);
+			Lazer.SetPosition (1, laserPointer.transform.position +  laserPointer.transform.forward * 10);	
+
+			if (Physics.Raycast (mRay.origin, laserPointer.transform.TransformDirection(Vector3.forward), out mHit)) 
 			{
-				Lazer.SetPosition (0, mRay.origin);
-				Lazer.SetPosition (1, mHit.point);				
+				Lazer.SetPosition (1, mHit.point);	
+				hitPosition = mHit.point;
 			}
 
-			if (!canGrapObject)
-			{
-				isTarget = false;
-				mousePosition = Input.mousePosition;
-				mousePosition.z += DistanceHand + 0.2f ;
-				Target.transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
-				canGrapObject = true;
-			}
+
 		}
 
 		if (Input.GetMouseButtonUp (1)) 
 		{
 			Lazer.enabled = false;
+
+			if (!canGrapObject)
+			{
+				isTarget = false;
+				//mousePosition = Input.mousePosition;
+				//mousePosition.z += DistanceHand + 0.2f ;
+				Target.transform.position = hitPosition;
+				canGrapObject = true;
+			}
 		}
 	}
 

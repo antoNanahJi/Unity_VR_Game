@@ -25102,6 +25102,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15.357104, y: 45.45064, z: 58.66813}
   m_Center: {x: -0.00000023841856, y: -0.0000047683725, z: 29.210209}
+--- !u!1 &792453264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 792453265}
+  m_Layer: 0
+  m_Name: LaserPointer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &792453265
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 792453264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.03, z: 0.047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 871216210}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &793577975 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 4ce788de3c0103d4dba5764f0383a8cf, type: 3}
@@ -27987,6 +28015,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 12321955}
+  - {fileID: 792453265}
   m_Father: {fileID: 1393473075}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45250,7 +45279,7 @@ LineRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 7089f8b630f9a324b89a48789c3c9395, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45275,7 +45304,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.1
+    widthMultiplier: 0.01
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -45290,7 +45319,7 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.9852941, g: 0, b: 0, a: 1}
+      key0: {r: 0.14792386, g: 0.23837838, b: 0.83823526, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -45338,7 +45367,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSpeed: 5
   RotationSpeed: 2
+  speed: 90
   myHand: {fileID: 871216209}
+  laserPointer: {fileID: 792453264}
+  playerCamera: {fileID: 870274200}
   Lazer: {fileID: 1393473071}
   DistanceHand: 0.4
   isSneaking: 0
