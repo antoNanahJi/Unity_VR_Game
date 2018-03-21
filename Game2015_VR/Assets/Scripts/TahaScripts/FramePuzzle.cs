@@ -23,10 +23,7 @@ public class FramePuzzle : MonoBehaviour {
 			libDoor.transform.Rotate (0.0f, -90.0f, 0.0f);
 
 		}
-		Debug.Log (fOne + " 1");
-		Debug.Log (fTwo + " 2");
-		Debug.Log (fThree + " 3");
-		Debug.Log (fFour + " 4");
+
 	}
 	void OnTriggerEnter(Collider other)
 	{
