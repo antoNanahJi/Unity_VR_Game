@@ -29,8 +29,13 @@ public class Oven_Script: MonoBehaviour {
 			anim.enabled = true;
 			aud.Play ();
 			light.enabled = true;
-			Instantiate (ghost,ghostSP.transform.position,ghostSP.transform.rotation);
+			InvokeRepeating ("Ghost",0.0f,2.0f);
+
 		}
+	}
+	void Ghost()
+	{
+		Instantiate (ghost,ghostSP.transform.position,ghostSP.transform.rotation);
 	}
 	void OnTriggerExit(Collider other)
 	{
@@ -38,6 +43,7 @@ public class Oven_Script: MonoBehaviour {
 		{
 			aud.Pause ();
 			anim.enabled = false;
+			CancelInvoke ();
 			light.enabled = false;
 		}
 	}

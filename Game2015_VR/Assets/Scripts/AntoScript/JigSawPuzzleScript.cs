@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JigSawPuzzleScript : MonoBehaviour {
 	AudioSource aud;
-
+	[SerializeField] PuzzleGameManager manager;
 	void Start()
 	{
 		aud = this.gameObject.GetComponent<AudioSource> ();
@@ -14,6 +14,7 @@ public class JigSawPuzzleScript : MonoBehaviour {
 	{
 		if (other.name == this.gameObject.name) {
 			other.gameObject.transform.position = transform.position;
+			manager.PuzzleNum++;
 			aud.Play ();
 		}
 	}
