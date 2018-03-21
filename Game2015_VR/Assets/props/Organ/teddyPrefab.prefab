@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 136536641659700342}
   m_Layer: 0
   m_Name: teddyPrefab
-  m_TagString: CanGrab
+  m_TagString: ObjectToGrap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

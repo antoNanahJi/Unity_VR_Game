@@ -46658,6 +46658,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 1583552703355788, guid: 46effe99cc4cf914692f2a2b2dd1f982, type: 2}
+      propertyPath: m_TagString
+      value: ObjectToGrap;Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 46effe99cc4cf914692f2a2b2dd1f982, type: 2}
   m_IsPrefabParent: 0

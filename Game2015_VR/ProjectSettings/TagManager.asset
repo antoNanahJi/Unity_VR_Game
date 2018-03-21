@@ -12,7 +12,7 @@ TagManager:
   - sunToy
   - starToy
   - Interactable
-  - CanGrab
+  - ObjectToGrap;Interactable
   - Interactable;CanGrab
   layers:
   - Default

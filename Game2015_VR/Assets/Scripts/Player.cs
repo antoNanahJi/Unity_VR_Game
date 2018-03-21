@@ -146,11 +146,11 @@ public class Player : MonoBehaviour
 				if (Physics.Raycast(mRay, out mHit, Distance))
 				{
 					// if target is stationary interactable world object
-					if (mHit.transform.gameObject.tag.Contains("Interactable") && !mHit.transform.gameObject.tag.Contains("CanGrab"))
+					if (mHit.transform.gameObject.tag.Contains("Interactable") && !mHit.transform.gameObject.tag.Contains("ObjectToGrap"))
 					{
 						InteractWorldObject(mHit.transform.gameObject);
 					}
-					else if (mHit.transform.gameObject.tag.Contains("CanGrab"))
+					else if (mHit.transform.gameObject.tag.Contains("ObjectToGrap"))
 					{
 						Target = mHit.transform.gameObject;
 						isTarget = true;
