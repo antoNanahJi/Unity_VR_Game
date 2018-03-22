@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38a1bc4b83f0ec94eb3f6f18c6202128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  starFrame: {fileID: 1167900628096916, guid: 3661dfc308174bf47b8000197ec91fce, type: 2}
 --- !u!114 &114682701104304212
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -18,13 +18,11 @@ public class riddlePuzzle : MonoBehaviour {
 
 	// Private object
 	private GameObject starObject;
+	private GameObject triggerObject;
 
 	// Audio Files
 	private AudioSource correctObject;
 	private AudioSource doorSlam;
-
-	// Objects
-	private GameObject starFrame;
 
 
 	void Start()
@@ -33,17 +31,12 @@ public class riddlePuzzle : MonoBehaviour {
 		moonLight = this.gameObject.GetComponentInChildren<Light> ();
 		starLight = this.gameObject.GetComponentInChildren<Light> ();
 		correctObject = gameObject.GetComponent<AudioSource> ();
-		starFrame = GameObject.Find ("Puzzle3");
-		starFrame.SetActive (false);
-	
 	}
 
 	// Triggers when proper object is placed on pedestal
 	void Update()
 	{
-		if (sunCheck == true && moonCheck == true) {
-			starFrame.SetActive (true);
-		}
+		
 	}
 
 	void OnTriggerEnter(Collider other)
