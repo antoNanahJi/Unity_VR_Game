@@ -11,11 +11,10 @@ public class Oven_Script: MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		anim = this.gameObject.GetComponent<Animator> ();
+		
 		aud = this.gameObject.GetComponent<AudioSource> ();
-		anim.enabled = false;
 		light.enabled = false;
-		aud.Pause ();
+
 	}
 	
 	// Update is called once per frame
@@ -26,11 +25,9 @@ public class Oven_Script: MonoBehaviour {
 	{
 		if(other.tag=="Player")
 		{
-			anim.enabled = true;
-			aud.Play ();
 			light.enabled = true;
-			InvokeRepeating ("Ghost",0.0f,2.0f);
-
+			Invoke ("Ghost",0.0f);
+			aud.Play ();
 		}
 	}
 	void Ghost()
@@ -41,10 +38,9 @@ public class Oven_Script: MonoBehaviour {
 	{
 		if(other.tag=="Player")
 		{
-			aud.Pause ();
-			anim.enabled = false;
-			CancelInvoke ();
+			
 			light.enabled = false;
+			aud.Pause ();
 		}
 	}
 }
