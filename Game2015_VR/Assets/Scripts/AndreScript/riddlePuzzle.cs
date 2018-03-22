@@ -3,34 +3,52 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class riddlePuzzle : MonoBehaviour {
-	[SerializeField] GameObject sunObject;
-	[SerializeField] GameObject moonObject;
-	[SerializeField] GameObject starObject;
-	[SerializeField] GameObject sunSpot;
-	[SerializeField] GameObject moonSpot;
-	[SerializeField] GameObject starSpot;
 
-	private bool sunCheck = false;
-	private bool moonCheck = false;
-	private bool starCheck = false;
+	// Bool variables
+	public static bool sunCheck = false;
+	public static bool moonCheck = false;
+	public static bool starCheck = false;
+
+	// Light objects
+	private Light sunLight;
+	private Light moonLight;
+	private Light starLight;
+
+	// Audio Files
+	private AudioSource correctObject;
+	private AudioSource doorSlam;
+
 
 	void Start()
 	{
-		sunObject = GameObject.Find ("Sun");
-		moonObject = GameObject.Find ("Moon");
-		starObject = GameObject.Find ("Star");
-		sunSpot = GameObject.Find ("PedestalSun");
-		moonSpot = GameObject.Find ("PedestalMoon");
-		starSpot = GameObject.Find ("PedestalStar");
+		sunLight = GameObject.Find ("PedestalSun").GetComponentInChildren<Light> ();
+		moonLight = GameObject.Find ("PedestalMoon").GetComponentInChildren<Light> ();
+		starLight = GameObject.Find ("PedestalStar").GetComponentInChildren<Light> ();
+		correctObject = gameObject.GetComponent<AudioSource> ();
 	}
 
 	// Triggers when proper object is placed on pedestal
 
-	void OnTriggerEnter(Collider collider)
+	void OnTriggerEnter(Collider other)
 	{
-		if (sunSpot == sunObject) {
+		other.gameObject.transform.position = new Vector3 (this.transform.position.x, this.transform.position.y + 3.0f, this.transform.position.z);
+
+		if (other.gameObject.name == "Sun" && this.gameObject.name == "PedestalSun") {
 			sunCheck = true;
-			Debug.Log (sunCheck);
+			sunLight.enabled = true;
+			correctObject.Play ();
+		}
+
+		if (other.gameObject.name == "Moon" && this.gameObject.name == "PedestalMoon") {
+			moonCheck = true;
+			moonLight.enabled = true;
+			correctObject.Play ();
+		}
+
+		if (other.gameObject.name == "Star" && this.gameObject.name == "PedestalStar") {
+			starCheck = true;
+			starLight.enabled = true;
+			correctObject.Play ();
 		}
 		
 	}
