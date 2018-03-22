@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 54674587409834350}
   m_Layer: 0
   m_Name: Moon
-  m_TagString: moonSpot
+  m_TagString: ObjectToGrap;Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

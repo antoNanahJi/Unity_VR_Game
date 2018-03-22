@@ -8,9 +8,6 @@ TagManager:
   - sunSpot
   - starSpot
   - moonSpot
-  - moonToy
-  - sunToy
-  - starToy
   - Interactable
   - ObjectToGrap;Interactable
   - Interactable;CanGrab
