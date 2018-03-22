@@ -11,6 +11,8 @@ TagManager:
   - Interactable
   - ObjectToGrap;Interactable
   - Interactable;CanGrab
+  - bookSpot
+  - puzzleBook
   layers:
   - Default
   - TransparentFX
