@@ -9,25 +9,42 @@ public class riddlePuzzle : MonoBehaviour {
 	public static bool moonCheck = false;
 	public static bool starCheck = false;
 
+	public static int objectCheck = 0;
+
 	// Light objects
 	private Light sunLight;
 	private Light moonLight;
 	private Light starLight;
 
+	// Private object
+	private GameObject starObject;
+
 	// Audio Files
 	private AudioSource correctObject;
 	private AudioSource doorSlam;
 
+	// Objects
+	private GameObject starFrame;
+
 
 	void Start()
 	{
-		sunLight = GameObject.Find ("PedestalSun").GetComponentInChildren<Light> ();
-		moonLight = GameObject.Find ("PedestalMoon").GetComponentInChildren<Light> ();
-		starLight = GameObject.Find ("PedestalStar").GetComponentInChildren<Light> ();
+		sunLight = this.gameObject.GetComponentInChildren<Light> ();
+		moonLight = this.gameObject.GetComponentInChildren<Light> ();
+		starLight = this.gameObject.GetComponentInChildren<Light> ();
 		correctObject = gameObject.GetComponent<AudioSource> ();
+		starFrame = GameObject.Find ("Puzzle3");
+		starFrame.SetActive (false);
+	
 	}
 
 	// Triggers when proper object is placed on pedestal
+	void Update()
+	{
+		if (sunCheck == true && moonCheck == true) {
+			starFrame.SetActive (true);
+		}
+	}
 
 	void OnTriggerEnter(Collider other)
 	{
@@ -37,19 +54,19 @@ public class riddlePuzzle : MonoBehaviour {
 			sunCheck = true;
 			sunLight.enabled = true;
 			correctObject.Play ();
+			objectCheck++;
 		}
 
 		if (other.gameObject.name == "Moon" && this.gameObject.name == "PedestalMoon") {
 			moonCheck = true;
 			moonLight.enabled = true;
 			correctObject.Play ();
+			objectCheck++;
 		}
 
 		if (other.gameObject.name == "Star" && this.gameObject.name == "PedestalStar") {
 			starCheck = true;
 			starLight.enabled = true;
-			correctObject.Play ();
 		}
-		
 	}
 }
