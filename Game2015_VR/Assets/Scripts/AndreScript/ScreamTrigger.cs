@@ -9,7 +9,7 @@ public class ScreamTrigger : riddlePuzzle {
 
 	// Use this for initialization
 	void Start () {
-		triggerObject = GetComponent<BoxCollider> ();
+		//triggerObject = GetComponent<BoxCollider> ();
 		_Scream = this.gameObject.GetComponent <AudioSource> ();
 		triggerObject.SetActive (false);
 	}
