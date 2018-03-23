@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScreamTrigger : riddlePuzzle {
+/*public class ScreamTrigger : riddlePuzzle {
 
 	private GameObject triggerObject;
 	private AudioSource _Scream;
@@ -11,13 +11,13 @@ public class ScreamTrigger : riddlePuzzle {
 	void Start () {
 		//triggerObject = GetComponent<BoxCollider> ();
 		_Scream = this.gameObject.GetComponent <AudioSource> ();
-		triggerObject.SetActive (false);
+		//triggerObject.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (sunCheck == true && moonCheck == true && starCheck == true) {
-			triggerObject.SetActive (true);
+			//triggerObject.SetActive (true);
 		}
 	}
 
@@ -29,3 +29,4 @@ public class ScreamTrigger : riddlePuzzle {
 	}
 
 }
+*/
