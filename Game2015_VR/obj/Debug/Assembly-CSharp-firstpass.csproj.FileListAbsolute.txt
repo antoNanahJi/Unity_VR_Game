@@ -138,7 +138,6 @@ C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembl
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Facebook.Unity.Settings.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\nunit.framework.dll
-C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\SyntaxTree.VisualStudio.Unity.Bridge.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.Advertisements.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.Analytics.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.dll
@@ -176,7 +175,6 @@ C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Unity.L
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Unity.UNetWeaver.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Unity.Cecil.Mdb.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
-C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\SyntaxTree.VisualStudio.Unity.Messaging.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Unity.CecilTools.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Unity.Cecil.Pdb.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEngine.xml
