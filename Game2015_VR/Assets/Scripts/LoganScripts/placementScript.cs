@@ -19,32 +19,36 @@ public class placementScript : MonoBehaviour {
 		
 	}
 	void OnTriggerEnter(Collider _collision){
-		if (_collision.gameObject.name == "scroll1") 
+		if (_collision.gameObject.name == "placement1") 
 		{
 			Instantiate (scrollPlaced1,scrollPlaced1.transform.position ,scrollPlaced1.transform.rotation);
 			complete.Play ();
+			Destroy (gameObject);
 			count++;
 		}
-		if (_collision.gameObject.name == "scroll2") 
+		if (_collision.gameObject.name == "placement2") 
 		{
 			Instantiate (scrollPlaced2,scrollPlaced2.transform.position ,scrollPlaced2.transform.rotation);
 			complete.Play ();
+			Destroy (gameObject);
 			count++;
 		}
-		if (_collision.gameObject.name == "scroll3") 
+		if (_collision.gameObject.name == "placement3") 
 		{
 			
 
 			Instantiate (scrollPlaced3,scrollPlaced3.transform.position ,scrollPlaced3.transform.rotation);
 			complete.Play ();
+			Destroy (gameObject);
 			count++;
 		}
-		if (_collision.gameObject.name == "scroll4") 
+		if (_collision.gameObject.name == "placement4") 
 		{
 			
 
 			Instantiate (scrollPlaced4,scrollPlaced3.transform.position ,scrollPlaced3.transform.rotation);
 			complete.Play ();
+			Destroy (gameObject);
 			count++;
 		}
 		if (count == 4) 
