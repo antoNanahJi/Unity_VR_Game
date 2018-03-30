@@ -11,9 +11,8 @@ public class ScreamTrigger : riddlePuzzle {
 
 	// Use this for initialization
 	void Start () {
-		slenderMan = GameObject.Find ("SlenderMan");
-		slenderMan.SetActive (false);
-
+		
+		//slenderMan = gameObject.GetComponent<GameObject> ();
 		screamTrigger = this.gameObject.GetComponent<Collider>();
 		screamTrigger.enabled = false;
 
@@ -32,15 +31,16 @@ public class ScreamTrigger : riddlePuzzle {
 	{
 		if (collide.CompareTag("Player")) 
 		{
-			SlenderPlay ();
+			_Scream.Play ();
+			GameObject Slender = Instantiate (slenderMan, new Vector3 (this.transform.position.x + 3.7f, this.transform.position.y, this.transform.position.z), this.transform.rotation); 
+			Destroy (this.gameObject, 3.0f);
+			Destroy (Slender, 2.5f);
+
 		}
 	}
 
-	void SlenderPlay()
+	void SlenderDestroy()
 	{
-		//triggerObject.enabled = false;
-		_Scream.Play ();
-		slenderMan.SetActive (true);
-		Destroy (this.gameObject, 3.0f);
+		DestroyImmediate (slenderMan, true);
 	}
 }
