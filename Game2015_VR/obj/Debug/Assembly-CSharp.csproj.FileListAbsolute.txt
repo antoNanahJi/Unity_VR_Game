@@ -177,7 +177,6 @@ C:\Users\andre\Desktop\Unity_VR_Game\Game2015_VR\obj\Debug\Assembly-CSharp.dll
 C:\Users\andre\Desktop\Unity_VR_Game\Game2015_VR\obj\Debug\Assembly-CSharp.pdb
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembly-CSharp.dll
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembly-CSharp.pdb
-C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Facebook.Unity.Settings.dll
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\nunit.framework.dll
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.Advertisements.dll
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.Analytics.dll

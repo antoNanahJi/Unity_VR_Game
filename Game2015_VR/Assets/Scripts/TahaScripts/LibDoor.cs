@@ -17,9 +17,11 @@ public class LibDoor: MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Mouse1)&& doorClosed) {
+		
+		//Input.GetKeyDown(KeyCode.J)
+		if (OVRInput.GetDown(OVRInput.Button.One) && doorClosed) {
 			door.transform.Rotate(0.0f,-90.0f,0.0f);
-
+			//Debug.Log("J being pressed");
 			Invoke ("doorAuto", 4.0f);
 
 		}
