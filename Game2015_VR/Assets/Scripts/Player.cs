@@ -157,6 +157,7 @@ public class Player : MonoBehaviour
 						canGrapObject = false;
 						objectInHand = true;
 					}
+
 				}
 			}
 		}
@@ -196,6 +197,8 @@ public class Player : MonoBehaviour
 				Lazer.SetPosition(1, mHit.point);	
 				hitPosition = mHit.point;
 			}
+
+				
 
 
 		}
