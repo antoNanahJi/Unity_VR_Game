@@ -469,6 +469,10 @@ public class OVRPlayerController : MonoBehaviour
 			Vector3 prevPos = root.position;
 			Quaternion prevRot = root.rotation;
 
+			/*Vector3 euler = transform.rotation.eulerAngles;
+			euler.y = InitialYRotation;
+			transform.rotation = Quaternion.Euler(euler);*/
+
 			transform.rotation = Quaternion.Euler(0.0f, centerEye.rotation.eulerAngles.y, 0.0f);
 
 			root.position = prevPos;

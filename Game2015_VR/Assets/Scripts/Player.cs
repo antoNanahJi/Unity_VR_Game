@@ -150,7 +150,7 @@ public class Player : MonoBehaviour
 					{
 						InteractWorldObject(mHit.transform.gameObject);
 					}
-					else if (mHit.transform.gameObject.tag.Contains("CanGrab"))
+					else if (mHit.transform.gameObject.tag.Contains("CanGrab") || mHit.transform.gameObject.tag == "ObjectToGrap" )
 					{
 						Target = mHit.transform.gameObject;
 						isTarget = true;
