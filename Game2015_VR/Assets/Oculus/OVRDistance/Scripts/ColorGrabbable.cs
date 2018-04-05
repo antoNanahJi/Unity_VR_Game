@@ -13,7 +13,7 @@ namespace OVRTouchSample
         public static readonly Color COLOR_GRAB = new Color(1.0f, 0.5f, 0.0f, 1.0f);
         public static readonly Color COLOR_HIGHLIGHT = new Color(1.0f, 0.0f, 1.0f, 1.0f);
 
-        private Color m_color = Color.black;
+		private Color m_color = Color.blue;
         private MeshRenderer[] m_meshRenderers = null;
         private bool m_highlight;
         
@@ -29,9 +29,9 @@ namespace OVRTouchSample
 
         protected void UpdateColor()
         {
-            if (isGrabbed) SetColor(COLOR_GRAB);
-            else if (Highlight) SetColor(COLOR_HIGHLIGHT);
-            else SetColor(m_color);
+           // if (isGrabbed) SetColor(COLOR_GRAB);
+            /*else */if (Highlight) SetColor(COLOR_HIGHLIGHT);
+           // else SetColor(m_color);
 
         }
 
@@ -76,7 +76,7 @@ namespace OVRTouchSample
                 Random.Range(0.1f, 0.95f),
                 1.0f
             );
-            SetColor(m_color);
+           // SetColor(m_color);
         }
 
         private void SetColor(Color color)
