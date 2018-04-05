@@ -136,7 +136,6 @@ F:\GitHub\Unity_VR_Game\Game2015_VR\obj\Debug\Assembly-CSharp-firstpass.dll
 F:\GitHub\Unity_VR_Game\Game2015_VR\obj\Debug\Assembly-CSharp-firstpass.pdb
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
-C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Facebook.Unity.Settings.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\nunit.framework.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.Advertisements.dll
 C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.Analytics.dll

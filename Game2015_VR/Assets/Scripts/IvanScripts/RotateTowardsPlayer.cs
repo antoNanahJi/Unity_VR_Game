@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotateTowardsPlayer : MonoBehaviour {
 
-	[SerializeField] GameObject playerObj;
+	GameObject playerObj;
 	private Vector3 directionVector;
 	private float   distanceToPlayer;
 	private float   minimunDistanceToRotate = 10.0f;
@@ -13,7 +13,8 @@ public class RotateTowardsPlayer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
+		playerObj= GameObject.FindWithTag ("Player");
 		
 	}
 	

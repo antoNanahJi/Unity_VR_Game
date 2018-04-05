@@ -3,24 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorsScript : MonoBehaviour {
-	Ray mRay;
-	RaycastHit mHit;
-	[SerializeField] float Distance = 10.0f;
 
+	GameObject player;
+	bool doorOpen = false;
+	AudioSource  aud;
+
+	float Distance = 2.0f;
+	void Start()
+	{   //Do not fuck with
+		player = GameObject.FindWithTag ("Player");
+
+		aud = gameObject.GetComponent<AudioSource> ();
+	}
 
 	// Update is called once per frame
 	void Update () {
-		
-		//Input.GetKeyDown(KeyCode.J)
-		if (Input.GetMouseButton(1)) {
-			mRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-			if (Physics.Raycast(mRay, out mHit, Distance))
-			{
-				if(mHit.transform.gameObject.tag=="Door")
-					mHit.transform.gameObject.transform.Rotate (0.0f,-50.0f,0.0f);
-				
-			}
 
+		float magnitude = Vector3.Distance (player.transform.position, transform.position);
+
+		if (magnitude <= Distance && (OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) >= 1.0f ) && !doorOpen)
+		{
+			doorOpen = true;
+		    transform.Rotate (0.0f,-90.0f,0.0f);
+			aud.Play ();
+			return;
 		}
 	}
 }

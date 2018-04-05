@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayCreepyLaugh : MonoBehaviour {
 
 	private AudioSource creepyLaughAudio;
-	[SerializeField] GameObject playerObj;
+	GameObject playerObj;
 	private Vector3 directionVector;
 	private float   distanceToPlayer;
 	private float   minimunDistanceToplay = 8.0f;
@@ -13,7 +13,9 @@ public class PlayCreepyLaugh : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
+		playerObj = GameObject.FindWithTag ("Player");
+
 		creepyLaughAudio = this.gameObject.GetComponent <AudioSource> ();
 	
 	}
