@@ -12,7 +12,7 @@ public class DoorsScript : MonoBehaviour {
 	void Update () {
 		
 		//Input.GetKeyDown(KeyCode.J)
-		if (OVRInput.GetDown(OVRInput.Button.One) ) {
+		if (Input.GetMouseButton(1)) {
 			mRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 			if (Physics.Raycast(mRay, out mHit, Distance))
 			{
