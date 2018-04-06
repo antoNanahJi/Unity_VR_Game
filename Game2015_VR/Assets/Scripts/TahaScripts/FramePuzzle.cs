@@ -9,6 +9,7 @@ public class FramePuzzle : MonoBehaviour {
 	static bool fThree = false;
 	static bool fFour = false;
 	public GameObject libDoor;
+	bool releaseObject = false;
 	//public GameObject snapsy;
 	static bool stop = true;
 	// Use this for initialization
@@ -24,11 +25,28 @@ public class FramePuzzle : MonoBehaviour {
 
 		}
 
+		if (OVRInput.Get (OVRInput.Axis1D.SecondaryHandTrigger) <= 0) 
+		{
+			releaseObject = true;
+			Debug.Log ("0");
+		}
+		if (OVRInput.Get (OVRInput.Axis1D.SecondaryHandTrigger) >= 1) 
+		{
+			Debug.Log ("1");
+			releaseObject = false;
+		}
+			
+
+
+
 	}
 	void OnTriggerEnter(Collider other)
 	{
-		other.gameObject.transform.position = this.transform.position;
-
+		if(other.gameObject.tag == "Letter" && releaseObject)
+		{
+			other.gameObject.transform.position = new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
+			Debug.Log ("We here ");
+		}
 		if (other.gameObject.name == "eLet" && this.gameObject.name == "Frame1") {
 			fOne = true;
 		}

@@ -17,6 +17,7 @@ TagManager:
   - CanGrab
   - scroll1Final
   - Door
+  - Letter
   layers:
   - Default
   - TransparentFX

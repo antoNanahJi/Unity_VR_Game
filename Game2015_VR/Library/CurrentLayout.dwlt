@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 926
-  m_MinSize: {x: 683, y: 342}
-  m_MaxSize: {x: 12008, y: 8042}
+  m_MinSize: {x: 679, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
-  controlID: 9
+  controlID: 94
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,8 +130,8 @@ MonoBehaviour:
     y: 0
     width: 1365
     height: 926
-  m_MinSize: {x: 406, y: 342}
-  m_MaxSize: {x: 8006, y: 8042}
+  m_MinSize: {x: 404, y: 342}
+  m_MaxSize: {x: 8004, y: 8042}
   vertical: 1
   controlID: 10
 --- !u!114 &7
@@ -154,8 +154,8 @@ MonoBehaviour:
     y: 0
     width: 1365
     height: 650
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
   controlID: 11
 --- !u!114 &8
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 390
     height: 650
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -228,8 +228,8 @@ MonoBehaviour:
     y: 650
     width: 1365
     height: 276
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
@@ -254,8 +254,8 @@ MonoBehaviour:
     y: 0
     width: 555
     height: 926
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -394,24 +394,24 @@ MonoBehaviour:
     height: 629
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 503.51428}
-    m_SelectedIDs: f2840000
-    m_LastClickedID: 34034
-    m_ExpandedIDs: 9cfbffff000000009060000030620000a264000062650000a46700000a6f0000ec7e0000b8810000be85000010960000a2960000d2a000004cab0000
+    scrollPos: {x: 0, y: 2652}
+    m_SelectedIDs: f0890000
+    m_LastClickedID: 35312
+    m_ExpandedIDs: 6621eaffc07bffff42c3ffff9ac3ffffb2c3ffffb6c3ffffc0c3ffffd2c3ffffdcc3fffff4c3ffff9cfbffff00000000306e000038790000128000006c8000003c810000ba8100002e820000c88400005c870000f0890000fe890000ac9500001a960000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: eLet
+      m_OriginalName: eLet
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 35932
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -448,14 +448,14 @@ MonoBehaviour:
     height: 629
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 0
-  lastFramingTime: 184.55948039983343
+  lastFramingTime: 7028.430770677301
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -31.320087, y: 0.027409792, z: 20.873308}
+    m_Target: {x: 24.21532, y: 2.5305703, z: 14.790769}
     speed: 2
-    m_Value: {x: -31.320087, y: 0.027409792, z: 20.873308}
+    m_Value: {x: 24.21532, y: 2.5305703, z: 14.790769}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -479,13 +479,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.17440097, y: 0.6421208, z: -0.15328096, w: -0.73059577}
+    m_Target: {x: 0.060427606, y: -0.8644241, z: 0.10715132, w: 0.48748142}
     speed: 2
-    m_Value: {x: -0.17440097, y: 0.6421208, z: -0.15328096, w: -0.73059577}
+    m_Value: {x: 0.060427606, y: -0.8644241, z: 0.10715132, w: 0.48748142}
   m_Size:
-    m_Target: 4.8864293
+    m_Target: 0.567736
     speed: 2
-    m_Value: 4.8864293
+    m_Value: 0.567736
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -563,19 +563,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Oculus/OVRDistance/Toys/Materials
+    - Assets/_ImportedAssets/Kitchen/Puzzle_Assets
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Oculus/OVRDistance/Toys/Materials
+  - Assets/_ImportedAssets/Kitchen/Puzzle_Assets
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\Logan\Documents\GitHub\Unity_VR_Game\Game2015_VR
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 854.48645}
-    m_SelectedIDs: a43d0000
-    m_LastClickedID: 15780
-    m_ExpandedIDs: 00000000be2a0000fa2c000022330000ce3600003e390000563d0000903f0000f648000008490000d6560000c45b0000125d0000ffffff7f
+    scrollPos: {x: 0, y: 2}
+    m_SelectedIDs: fc5d0000
+    m_LastClickedID: 24060
+    m_ExpandedIDs: 00000000be2a0000fa2c0000ce3600003e390000563d0000903f0000f6480000084900009a4b0000d6560000c45b0000125d0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -603,7 +603,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be2a0000fa2c000022330000ce3600003e390000563d0000f648000008490000d6560000c45b0000125d0000
+    m_ExpandedIDs: 00000000be2a0000fa2c000022330000ce3600003e390000563d0000903f0000f648000008490000d6560000c45b0000125d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -628,8 +628,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f2840000
-    m_LastClickedInstanceID: 34034
+    m_SelectedInstanceIDs: f0890000
+    m_LastClickedInstanceID: 35312
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: bc2a00006e35000074fb00003e9900005c690000765b0000
     m_RenameOverlay:
