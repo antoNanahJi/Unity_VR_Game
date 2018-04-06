@@ -12,7 +12,7 @@ public class PuzzleGameManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(PuzzleNum==6)
+		if(PuzzleNum==5)
 		{
 			key.SetActive (true);
 		}
