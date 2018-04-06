@@ -8,7 +8,7 @@ public class PlayCreepyLaugh : MonoBehaviour {
 	GameObject playerObj;
 	private Vector3 directionVector;
 	private float   distanceToPlayer;
-	private float   minimunDistanceToplay = 8.0f;
+	private float   minimunDistanceToplay = 2.0f;
 	private bool   AudioNotPlayed = false;
 
 	// Use this for initialization

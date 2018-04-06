@@ -1,0 +1,450 @@
+fileFormatVersion: 2
+guid: ea7b9553da84e6c448a70c773f1c897e
+timeCreated: 1522985313
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Ankle.L
+    100002: AnkleR
+    100004: Arm.L
+    100006: Arm.L 1
+    100008: Arm.R
+    100010: Arm.R 1
+    100012: Armature
+    100014: Calf.L
+    100016: Calf.L 1
+    100018: Calf.R
+    100020: Calf.R 1
+    100022: Camera
+    100024: Chest
+    100026: //RootNode
+    100028: DollHead
+    100030: Elbow.L
+    100032: Elbow.R
+    100034: Eye.L
+    100036: Eye.L 1
+    100038: Eye.L_end
+    100040: Eye.R
+    100042: Eye.R 1
+    100044: Eye.R_end
+    100046: F.B.J.L
+    100048: F.B.J.R
+    100050: F.M.J.L
+    100052: F.M.J.R
+    100054: F.T.J.L
+    100056: F.T.J.R
+    100058: Finger.Base.L
+    100060: Finger.Base.R
+    100062: Finger.Mid.L
+    100064: Finger.Mid.R
+    100066: Finger.Top.L
+    100068: Finger.Top.R
+    100070: Fingers.B.L
+    100072: Fingers.B.R
+    100074: Fingers.M.L
+    100076: Fingers.M.R
+    100078: Fingers.T.L
+    100080: Fingers.T.L_end
+    100082: Fingers.T.R
+    100084: Fingers.T.R_end
+    100086: Foot.L
+    100088: Foot.L 1
+    100090: Foot.L_end
+    100092: Foot.R
+    100094: Foot.R 1
+    100096: Foot.R_end
+    100098: Forearm.L
+    100100: Forearm.L 1
+    100102: Forearm.R
+    100104: Forearm.R 1
+    100106: Hand.L
+    100108: Hand.L 1
+    100110: Hand.R
+    100112: Hand.R 1
+    100114: Head
+    100116: Hip.L
+    100118: Hip.R
+    100120: Hips
+    100122: Knee.L
+    100124: Knee.R
+    100126: Neck.Joint
+    100128: Pelvis
+    100130: Pelvis.Joint
+    100132: Plane
+    100134: Root
+    100136: Shoulder.Joint.L
+    100138: Shoulder.Joint.R
+    100140: Sphere.001
+    100142: Sphere.003
+    100144: Spine.Joint
+    100146: Stiches
+    100148: Stomach
+    100150: T..J.L
+    100152: T.J.R
+    100154: T.T.J.L
+    100156: T.T.J.R
+    100158: Thigh.L
+    100160: Thigh.L 1
+    100162: Thigh.R
+    100164: Thigh.R 1
+    100166: Thumb.B.L
+    100168: Thumb.B.R
+    100170: Thumb.T.L
+    100172: Thumb.T.L_end
+    100174: Thumb.T.R
+    100176: Thumb.T.R_end
+    100178: Thumn.Base.L
+    100180: Thumn.Base.R
+    100182: Thumn.Top.L
+    100184: Thumn.Top.R
+    100186: Wrist.L
+    100188: Wrist.R
+    400000: Ankle.L
+    400002: AnkleR
+    400004: Arm.L
+    400006: Arm.L 1
+    400008: Arm.R
+    400010: Arm.R 1
+    400012: Armature
+    400014: Calf.L
+    400016: Calf.L 1
+    400018: Calf.R
+    400020: Calf.R 1
+    400022: Camera
+    400024: Chest
+    400026: //RootNode
+    400028: DollHead
+    400030: Elbow.L
+    400032: Elbow.R
+    400034: Eye.L
+    400036: Eye.L 1
+    400038: Eye.L_end
+    400040: Eye.R
+    400042: Eye.R 1
+    400044: Eye.R_end
+    400046: F.B.J.L
+    400048: F.B.J.R
+    400050: F.M.J.L
+    400052: F.M.J.R
+    400054: F.T.J.L
+    400056: F.T.J.R
+    400058: Finger.Base.L
+    400060: Finger.Base.R
+    400062: Finger.Mid.L
+    400064: Finger.Mid.R
+    400066: Finger.Top.L
+    400068: Finger.Top.R
+    400070: Fingers.B.L
+    400072: Fingers.B.R
+    400074: Fingers.M.L
+    400076: Fingers.M.R
+    400078: Fingers.T.L
+    400080: Fingers.T.L_end
+    400082: Fingers.T.R
+    400084: Fingers.T.R_end
+    400086: Foot.L
+    400088: Foot.L 1
+    400090: Foot.L_end
+    400092: Foot.R
+    400094: Foot.R 1
+    400096: Foot.R_end
+    400098: Forearm.L
+    400100: Forearm.L 1
+    400102: Forearm.R
+    400104: Forearm.R 1
+    400106: Hand.L
+    400108: Hand.L 1
+    400110: Hand.R
+    400112: Hand.R 1
+    400114: Head
+    400116: Hip.L
+    400118: Hip.R
+    400120: Hips
+    400122: Knee.L
+    400124: Knee.R
+    400126: Neck.Joint
+    400128: Pelvis
+    400130: Pelvis.Joint
+    400132: Plane
+    400134: Root
+    400136: Shoulder.Joint.L
+    400138: Shoulder.Joint.R
+    400140: Sphere.001
+    400142: Sphere.003
+    400144: Spine.Joint
+    400146: Stiches
+    400148: Stomach
+    400150: T..J.L
+    400152: T.J.R
+    400154: T.T.J.L
+    400156: T.T.J.R
+    400158: Thigh.L
+    400160: Thigh.L 1
+    400162: Thigh.R
+    400164: Thigh.R 1
+    400166: Thumb.B.L
+    400168: Thumb.B.R
+    400170: Thumb.T.L
+    400172: Thumb.T.L_end
+    400174: Thumb.T.R
+    400176: Thumb.T.R_end
+    400178: Thumn.Base.L
+    400180: Thumn.Base.R
+    400182: Thumn.Top.L
+    400184: Thumn.Top.R
+    400186: Wrist.L
+    400188: Wrist.R
+    2000000: Camera
+    2100000: Floor
+    2100002: Skin
+    2100004: Dark
+    2100006: Plastic
+    2100008: Tears
+    2100010: Stiching
+    2100012: EyeGlow
+    2300000: Ankle.L
+    2300002: AnkleR
+    2300004: Arm.L 1
+    2300006: Arm.R 1
+    2300008: Calf.L 1
+    2300010: Calf.R 1
+    2300012: Elbow.L
+    2300014: Elbow.R
+    2300016: Eye.L 1
+    2300018: Eye.R 1
+    2300020: F.B.J.L
+    2300022: F.B.J.R
+    2300024: F.M.J.L
+    2300026: F.M.J.R
+    2300028: F.T.J.L
+    2300030: F.T.J.R
+    2300032: Finger.Base.L
+    2300034: Finger.Base.R
+    2300036: Finger.Mid.L
+    2300038: Finger.Mid.R
+    2300040: Finger.Top.L
+    2300042: Finger.Top.R
+    2300044: Foot.L 1
+    2300046: Foot.R 1
+    2300048: Forearm.L 1
+    2300050: Forearm.R 1
+    2300052: Hand.L 1
+    2300054: Hand.R 1
+    2300056: Hip.L
+    2300058: Hip.R
+    2300060: Knee.L
+    2300062: Knee.R
+    2300064: Neck.Joint
+    2300066: Pelvis
+    2300068: Pelvis.Joint
+    2300070: Plane
+    2300072: Shoulder.Joint.L
+    2300074: Shoulder.Joint.R
+    2300076: Sphere.001
+    2300078: Sphere.003
+    2300080: Spine.Joint
+    2300082: Stiches
+    2300084: T..J.L
+    2300086: T.J.R
+    2300088: T.T.J.L
+    2300090: T.T.J.R
+    2300092: Thigh.L 1
+    2300094: Thigh.R 1
+    2300096: Thumn.Base.L
+    2300098: Thumn.Base.R
+    2300100: Thumn.Top.L
+    2300102: Thumn.Top.R
+    2300104: Wrist.L
+    2300106: Wrist.R
+    3300000: Ankle.L
+    3300002: AnkleR
+    3300004: Arm.L 1
+    3300006: Arm.R 1
+    3300008: Calf.L 1
+    3300010: Calf.R 1
+    3300012: Elbow.L
+    3300014: Elbow.R
+    3300016: Eye.L 1
+    3300018: Eye.R 1
+    3300020: F.B.J.L
+    3300022: F.B.J.R
+    3300024: F.M.J.L
+    3300026: F.M.J.R
+    3300028: F.T.J.L
+    3300030: F.T.J.R
+    3300032: Finger.Base.L
+    3300034: Finger.Base.R
+    3300036: Finger.Mid.L
+    3300038: Finger.Mid.R
+    3300040: Finger.Top.L
+    3300042: Finger.Top.R
+    3300044: Foot.L 1
+    3300046: Foot.R 1
+    3300048: Forearm.L 1
+    3300050: Forearm.R 1
+    3300052: Hand.L 1
+    3300054: Hand.R 1
+    3300056: Hip.L
+    3300058: Hip.R
+    3300060: Knee.L
+    3300062: Knee.R
+    3300064: Neck.Joint
+    3300066: Pelvis
+    3300068: Pelvis.Joint
+    3300070: Plane
+    3300072: Shoulder.Joint.L
+    3300074: Shoulder.Joint.R
+    3300076: Sphere.001
+    3300078: Sphere.003
+    3300080: Spine.Joint
+    3300082: Stiches
+    3300084: T..J.L
+    3300086: T.J.R
+    3300088: T.T.J.L
+    3300090: T.T.J.R
+    3300092: Thigh.L 1
+    3300094: Thigh.R 1
+    3300096: Thumn.Base.L
+    3300098: Thumn.Base.R
+    3300100: Thumn.Top.L
+    3300102: Thumn.Top.R
+    3300104: Wrist.L
+    3300106: Wrist.R
+    4300000: Plane
+    4300002: Pelvis
+    4300004: Hip.R
+    4300006: Hip.L
+    4300008: Pelvis.Joint
+    4300010: Thigh.L
+    4300012: Knee.L
+    4300014: Calf.L
+    4300016: Ankle.L
+    4300018: Foot.L
+    4300020: Sphere.003
+    4300022: Spine.Joint
+    4300024: Sphere.001
+    4300026: Neck.Joint
+    4300028: Shoulder.Joint.L
+    4300030: Shoulder.Joint.R
+    4300032: DollHead
+    4300034: Stiches
+    4300036: Eye.L
+    4300038: Eye.R
+    4300040: Arm.L
+    4300042: Elbow.L
+    4300044: Forearm.L
+    4300046: Wrist.L
+    4300048: Hand.L
+    4300050: T..J.L
+    4300052: F.B.J.L
+    4300054: Finger.Base.L
+    4300056: F.M.J.L
+    4300058: Finger.Mid.L
+    4300060: F.T.J.L
+    4300062: Finger.Top.L
+    4300064: Thumn.Base.L
+    4300066: T.T.J.L
+    4300068: Thumn.Top.L
+    4300070: Arm.R
+    4300072: Elbow.R
+    4300074: Forearm.R
+    4300076: Wrist.R
+    4300078: Hand.R
+    4300080: F.B.J.R
+    4300082: T.J.R
+    4300084: Finger.Base.R
+    4300086: F.M.J.R
+    4300088: Finger.Mid.R
+    4300090: F.T.J.R
+    4300092: Finger.Top.R
+    4300094: Thumn.Base.R
+    4300096: T.T.J.R
+    4300098: Thumn.Top.R
+    4300100: Thigh.R
+    4300102: Knee.R
+    4300104: Calf.R
+    4300106: AnkleR
+    4300108: Foot.R
+    9500000: //RootNode
+    13700000: DollHead
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
