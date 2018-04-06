@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+	[SerializeField] private UI UIscript;
 	[SerializeField] float MovementSpeed = 5.0f;
 	[SerializeField] float RotationSpeed = 2.0f;
 	[SerializeField] float speed = 90.0f;
 	[SerializeField] GameObject myHand;
 	[SerializeField] GameObject laserPointer;
 	[SerializeField] Camera playerCamera;
+	[SerializeField] int hitPoints = 100;
 
 	public LineRenderer Lazer;
 	public float DistanceHand = 10.0f;
 	float newRotationX;
 	public bool isSneaking;
+	public bool isWalking;
+	public bool isSnared;
+	private float walkSpeed;
+	private float sneakSpeed;
 
 	Vector3 hitPosition;
 
@@ -36,7 +41,8 @@ public class Player : MonoBehaviour
 	{
 		mHit = new RaycastHit();
 		Lazer.enabled = false;
-
+		walkSpeed = MovementSpeed;
+		sneakSpeed = walkSpeed * 0.5f;
 	}
 
 	// Update is called once per frame
@@ -66,15 +72,42 @@ public class Player : MonoBehaviour
 
 	}
 
+	public void TakeDamage(int dmg)
+	{
+		hitPoints -= dmg;
+		UIscript.BloodSplatter();
+	}
+
+	public void Ensnare(bool snared)
+	{
+		isSnared = snared;
+	}
+
 	void MovePlayer()
 	{
-		if (Input.GetKey(KeyCode.W))
+		isWalking = false;
+		if (Input.GetKeyDown(KeyCode.LeftControl))
 		{
-			transform.Translate(Vector3.forward * MovementSpeed * Time.deltaTime);
+			isSneaking = true;
+			MovementSpeed = sneakSpeed;
 		}
-		if (Input.GetKey(KeyCode.S))
+		if (Input.GetKeyUp(KeyCode.LeftControl))
 		{
-			transform.Translate(Vector3.forward * -MovementSpeed * Time.deltaTime);
+			isSneaking = false;
+			MovementSpeed = walkSpeed;
+		}
+		if (!isSnared)
+		{
+			if (Input.GetKey(KeyCode.W))
+			{
+				transform.Translate(Vector3.forward * MovementSpeed * Time.deltaTime);
+				isWalking = true;
+			}
+			else if (Input.GetKey(KeyCode.S))
+			{
+				transform.Translate(Vector3.forward * -MovementSpeed * Time.deltaTime);
+				isWalking = true;
+			}
 		}
 		if (Input.GetKey(KeyCode.A))
 		{
