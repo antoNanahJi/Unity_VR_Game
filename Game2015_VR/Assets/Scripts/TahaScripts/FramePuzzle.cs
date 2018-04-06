@@ -28,11 +28,11 @@ public class FramePuzzle : MonoBehaviour {
 		if (OVRInput.Get (OVRInput.Axis1D.SecondaryHandTrigger) <= 0) 
 		{
 			releaseObject = true;
-			Debug.Log ("0");
+		//Debug.Log ("0");
 		}
 		if (OVRInput.Get (OVRInput.Axis1D.SecondaryHandTrigger) >= 1) 
 		{
-			Debug.Log ("1");
+			//Debug.Log ("1");
 			releaseObject = false;
 		}
 			
@@ -40,7 +40,7 @@ public class FramePuzzle : MonoBehaviour {
 
 
 	}
-	void OnTriggerEnter(Collider other)
+	void OnTriggerStay(Collider other)
 	{
 		if(other.gameObject.tag == "Letter" && releaseObject)
 		{

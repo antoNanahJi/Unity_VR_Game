@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class Gramophone : MonoBehaviour {
 	static AudioSource BackgroundMusic;
-	public AudioSource playerMusic;
+	AudioSource playerMusic;
+	GameObject player;
 	bool music = false;
 	static bool playing = false;
 	// Use this for initialization
 	void Start () {
 
-
+		player = GameObject.FindWithTag ("Player");
+		playerMusic = player.GetComponent<AudioSource> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.Mouse1)&&music)
+		if(OVRInput.Get (OVRInput.Axis1D.SecondaryHandTrigger) >= 1 && music)
 		{
 			if (playing) {
 				playerMusic.Stop ();
@@ -27,7 +29,7 @@ public class Gramophone : MonoBehaviour {
 			if (!playing) {
 				playerMusic.Stop ();
 				BackgroundMusic = this.gameObject.GetComponent<AudioSource> ();
-				BackgroundMusic.Stop ();
+				//BackgroundMusic.Stop ();
 				BackgroundMusic.Play ();
 				playing = true;
 			}
@@ -35,7 +37,7 @@ public class Gramophone : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.CompareTag ("Player")) {
+		if (other.tag == "Player") {
 			music = true;
 
 		}

@@ -12,7 +12,9 @@ public class mainMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Mouse0)&& doorClosed) {
+
+
+		if (OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) >= 1.0f && doorClosed) {
 			
 			SceneManager.LoadScene ("Main");
 
@@ -20,8 +22,9 @@ public class mainMenu : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.name == "Player")
+		if (other.tag == "Player")
 		{
+			
 			doorClosed = true;
 		}
 	}
