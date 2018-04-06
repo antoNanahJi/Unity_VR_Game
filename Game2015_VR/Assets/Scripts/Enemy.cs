@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+	[SerializeField] private Transform[] waypoints = new Transform[4];
 	[SerializeField] protected GameObject head;
 	[SerializeField] protected float fov;
 	[SerializeField] protected float sightRangeModifier;
@@ -83,6 +84,32 @@ public class Enemy : MonoBehaviour
 			{
 				nav.speed = walkSpeed;
 				nav.SetDestination(personalLastSighting);
+				personalLastSighting = nullVector;
+			}
+			else
+			{
+				if (nav.velocity.magnitude == 0.0f)
+				{
+					if (!actionWait)
+					{
+						actionTimer = 2.0f + Random.value * 6.0f;
+						actionWait = true;
+					}
+					else
+					{
+						if (actionTimer > 0)
+						{
+							actionTimer -= Time.deltaTime;
+						}
+						else
+						{
+							int rand = Random.Range(0, waypoints.Length);
+							nav.speed = walkSpeed;
+							nav.SetDestination(waypoints[rand].position);
+							actionWait = false;
+						}
+					}
+				}
 			}
 		}
 		if (nav.velocity.magnitude > 0.0f)
