@@ -5,7 +5,7 @@ using UnityEngine;
 public class Oven_Script: MonoBehaviour {
 	Animator anim;
 	AudioSource aud;
-	[SerializeField] Light light;
+	[SerializeField] GameObject light;
 	[SerializeField] Transform ghostSP;
 	[SerializeField] GameObject ghost;
 
@@ -14,7 +14,7 @@ public class Oven_Script: MonoBehaviour {
 		anim = this.gameObject.GetComponent<Animator> ();
 		aud = this.gameObject.GetComponent<AudioSource> ();
 		anim.enabled = false;
-		light.enabled = false;
+		light.SetActive(false);
 		aud.Pause ();
 	}
 	
@@ -28,7 +28,7 @@ public class Oven_Script: MonoBehaviour {
 		{
 			anim.enabled = true;
 			aud.Play ();
-			light.enabled = true;
+			light.SetActive(true);
 			InvokeRepeating ("Ghost",0.0f,2.0f);
 
 		}
@@ -44,7 +44,7 @@ public class Oven_Script: MonoBehaviour {
 			aud.Pause ();
 			anim.enabled = false;
 			CancelInvoke ();
-			light.enabled = false;
+			light.SetActive(false);
 		}
 	}
 }
