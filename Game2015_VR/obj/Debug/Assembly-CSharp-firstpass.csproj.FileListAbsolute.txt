@@ -68,7 +68,6 @@ C:\Users\anto2\Desktop\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.VR.x
 C:\Users\anto2\Desktop\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
 F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
 F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
-F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Facebook.Unity.Settings.dll
 F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\nunit.framework.dll
 F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.Advertisements.dll
 F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.Analytics.dll

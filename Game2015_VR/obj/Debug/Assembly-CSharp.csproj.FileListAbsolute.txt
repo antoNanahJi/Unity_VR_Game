@@ -32,7 +32,6 @@ C:\Users\anto2\Desktop\unityProjects\Game2015_VR\obj\Debug\Assembly-CSharp.dll
 C:\Users\anto2\Desktop\unityProjects\Game2015_VR\obj\Debug\Assembly-CSharp.pdb
 F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembly-CSharp.dll
 F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembly-CSharp.pdb
-F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Facebook.Unity.Settings.dll
 F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\nunit.framework.dll
 F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.Advertisements.dll
 F:\GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.Analytics.dll
