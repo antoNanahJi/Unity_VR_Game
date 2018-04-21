@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 	[SerializeField] GameObject laserPointer;
 	[SerializeField] Camera playerCamera;
 	[SerializeField] int hitPoints = 100;
+	[SerializeField] int counterAttackDamage = 20;
 
 	public LineRenderer Lazer;
 	public float DistanceHand = 10.0f;
@@ -21,6 +22,7 @@ public class Player : MonoBehaviour
 	public bool isSnared;
 	private float walkSpeed;
 	private float sneakSpeed;
+	private GameObject enemyAttacker;
 
 	Vector3 hitPosition;
 
@@ -50,7 +52,14 @@ public class Player : MonoBehaviour
 	{
 		HandFollowMouse();
 		MovePlayer();
-		GrabDropObject();
+		if (isSnared) // regular mouse button input disabled while under attack to allow for counter attack input
+		{
+			CounterAttack();
+		}
+		else
+		{
+			GrabDropObject();
+		}
 	}
 
 	void HandFollowMouse()
@@ -63,13 +72,10 @@ public class Player : MonoBehaviour
 
 		if (isTarget)
 		{
-
 			mousePosition = Input.mousePosition;
 			mousePosition.z += DistanceHand + 0.2f;
 			Target.transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
-	
 		}
-
 	}
 
 	public void TakeDamage(int dmg)
@@ -78,8 +84,32 @@ public class Player : MonoBehaviour
 		UIscript.BloodSplatter();
 	}
 
-	public void Ensnare(bool snared)
+	void CounterAttack()
 	{
+		if (enemyAttacker != null)
+		{
+			if (Input.GetMouseButtonDown(0))
+			{
+				// returns true if counter attack deals killing blow
+				if (enemyAttacker.GetComponent<Enemy>().TakeDamage(counterAttackDamage))
+				{
+					enemyAttacker = null;
+					isSnared = false;
+				}
+			}
+		}
+	}
+
+	public void Ensnare(GameObject attacker, bool snared)
+	{
+		if (snared)
+		{
+			enemyAttacker = attacker;
+		}
+		else
+		{
+			enemyAttacker = null;
+		}
 		isSnared = snared;
 	}
 

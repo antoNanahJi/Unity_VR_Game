@@ -2229,6 +2229,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  deathPrefab: {fileID: 1320356106303138, guid: be0352550b8cb0d47bc09fd2ddd10816,
+    type: 2}
   head: {fileID: 1076436085741212}
   fov: 140
   sightRangeModifier: 0.5
@@ -2236,6 +2238,7 @@ MonoBehaviour:
   walkSpeed: 2
   attackRange: 4
   attackDamage: 10
+  regenRate: 0.5
   personalLastSighting: {x: 0, y: 0, z: 0}
   playerInSight: 0
   playerHeard: 0

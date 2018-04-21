@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 	[SerializeField] private Transform[] waypoints = new Transform[4];
+	[SerializeField] protected GameObject deathPrefab;
 	[SerializeField] protected GameObject head;
 	[SerializeField] protected float fov;
 	[SerializeField] protected float sightRangeModifier;
@@ -13,6 +14,7 @@ public class Enemy : MonoBehaviour
 	[SerializeField] protected float walkSpeed;
 	[SerializeField] protected float attackRange;
 	[SerializeField] protected int attackDamage;
+	[SerializeField] protected float regenRate = 0.5f;
 
 	[SerializeField] protected Vector3 personalLastSighting;
 	[SerializeField] protected bool playerInSight;
@@ -28,6 +30,8 @@ public class Enemy : MonoBehaviour
 	protected bool isAttacking;
 	protected Vector3 nullVector;
 
+	private int hp;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -38,18 +42,52 @@ public class Enemy : MonoBehaviour
 		col = GetComponent<SphereCollider>();
 		nullVector = new Vector3(999f, 999f, 999f);
 		personalLastSighting = nullVector;
+		hp = 100;
+		StartCoroutine("Regen");
 	}
 
+	// override in specific enemy implementation
 	public virtual void AttackStart()
 	{
 	}
 
+	// override in specific enemy implementation
 	public virtual  void AttackEnd()
 	{
 	}
 
+	// override in specific enemy implementation
 	public virtual void AttackDamage()
 	{
+	}
+
+	void Death()
+	{
+		Instantiate(deathPrefab, this.transform.position, this.transform.rotation);
+		Destroy(this.gameObject);
+	}
+
+	public bool TakeDamage(int dmg)
+	{
+		hp -= dmg;
+		if (hp <= 0)
+		{
+			Death();
+			return true;
+		}
+		return false;
+	}
+
+	IEnumerator Regen()
+	{
+		while (true)
+		{
+			if (hp < 100)
+			{
+				hp++;
+			}
+			yield return new WaitForSeconds(regenRate);
+		}
 	}
 
 	/*

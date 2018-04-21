@@ -7,7 +7,7 @@ public class Jasper : Enemy
 	public override void AttackStart()
 	{
 		isAttacking = true;
-		playerScript.Ensnare(true);
+		playerScript.Ensnare(this.gameObject, true);
 	}
 
 	public override void AttackEnd()
@@ -18,6 +18,6 @@ public class Jasper : Enemy
 	public override void AttackDamage()
 	{
 		playerScript.TakeDamage(attackDamage);
-		playerScript.Ensnare(false);
+		playerScript.Ensnare(this.gameObject, false);
 	}
 }
