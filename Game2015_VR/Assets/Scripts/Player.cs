@@ -213,7 +213,7 @@ public class Player : MonoBehaviour
 					{
 						InteractWorldObject(mHit.transform.gameObject);
 					}
-					else if (mHit.transform.gameObject.tag.Contains("ObjectToGrap"))
+					else if (mHit.transform.gameObject.tag.Contains("ObjectToGrap")||mHit.transform.gameObject.tag == "Letter")
 					{
 						Target = mHit.transform.gameObject;
 						isTarget = true;

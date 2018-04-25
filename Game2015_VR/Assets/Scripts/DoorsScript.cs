@@ -21,7 +21,7 @@ public class DoorsScript : MonoBehaviour {
 
 		float magnitude = Vector3.Distance (player.transform.position, transform.position);
 
-		if (magnitude <= Distance && (OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) >= 1.0f ) && !doorOpen)
+		if (magnitude <= Distance && (Input.GetMouseButtonDown(0) || (OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) >= 1.0f )) && !doorOpen)
 		{
 			doorOpen = true;
 		    transform.Rotate (0.0f,-90.0f,0.0f);

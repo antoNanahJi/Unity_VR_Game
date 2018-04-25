@@ -220,6 +220,7 @@ C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_Gi
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.iOS.Extensions.Common.dll
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Unity.CecilTools.dll
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEngine.xml
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEditor.xml
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\UnityEngine.UI.xml
@@ -245,4 +246,3 @@ C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_Gi
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\obj\Debug\Assembly-CSharp.dll
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\obj\Debug\Assembly-CSharp.pdb
-C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

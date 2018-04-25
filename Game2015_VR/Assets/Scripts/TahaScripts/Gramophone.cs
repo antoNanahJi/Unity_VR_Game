@@ -17,7 +17,10 @@ public class Gramophone : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(OVRInput.Get (OVRInput.Axis1D.SecondaryHandTrigger) >= 1 && music)
+
+		//
+		
+		if( (Input.GetMouseButtonDown(0) || (OVRInput.Get (OVRInput.Axis1D.SecondaryHandTrigger) >= 1)) && Vector3.Distance(player.transform.position, this.transform.position) <= 2.5f && music)
 		{
 			if (playing) {
 				playerMusic.Stop ();

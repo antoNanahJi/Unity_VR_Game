@@ -21,17 +21,17 @@ public class PlayRoomPuzzle : MonoBehaviour {
 	{
 		if (other.gameObject.name == "YellowPuzzleCube" && !gotYellowCube) 
 		{
-			this.GetComponent<BoxCollider>().enabled = false;
+			//this.GetComponent<BoxCollider>().enabled = false;
 			other.gameObject.transform.position = new Vector3 (this.transform.position.x, this.transform.position.y, this.transform.position.z);
-			other.gameObject.tag = "Untagged";
+			//other.gameObject.tag = "Untagged";
 			gotYellowCube = true;
 			cubeCount++;
 		}
 		else if (other.gameObject.name == "RedPuzzleCube" && !gotRedCube)
 		{
-			this.GetComponent<BoxCollider>().enabled = false;
+			//this.GetComponent<BoxCollider>().enabled = false;
 			other.gameObject.transform.position = new Vector3 (this.transform.position.x, this.transform.position.y, this.transform.position.z);
-			other.gameObject.tag = "Untagged";
+			//other.gameObject.tag = "Untagged";
 			gotRedCube = true;
 			cubeCount++;
 		}
