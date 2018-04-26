@@ -20,7 +20,7 @@ public class ShowInstructions : MonoBehaviour {
 
 		float magnitude = Vector3.Distance (player.transform.position, transform.position);
 
-		if (magnitude <= Distance && (OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) >= 1.0f ) && !ActiveCanvas)
+		if (magnitude <= Distance && ((Input.GetMouseButtonDown(0) || OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) >= 1.0f )) && !ActiveCanvas)
 		{
 			ActiveCanvas = true;
 			canvas.SetActive(true);

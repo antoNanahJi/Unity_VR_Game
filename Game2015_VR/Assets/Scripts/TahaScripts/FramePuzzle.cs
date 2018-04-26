@@ -11,6 +11,7 @@ public class FramePuzzle : MonoBehaviour {
 	public GameObject libDoor;
 	bool releaseObject = false;
 	public GameObject frame;
+	public GameObject scroll;
 	//public GameObject snapsy;
 	static bool stop = true;
 	// Use this for initialization
@@ -24,6 +25,7 @@ public class FramePuzzle : MonoBehaviour {
 			stop = false;
 			libDoor.transform.Rotate (0.0f, -90.0f, 0.0f);
 			frame.SetActive (false);
+			scroll.SetActive(true);
 		}
 
 		if (OVRInput.Get (OVRInput.Axis1D.SecondaryHandTrigger) <= 0) 

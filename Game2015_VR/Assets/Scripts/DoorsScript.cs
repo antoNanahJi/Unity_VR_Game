@@ -8,7 +8,7 @@ public class DoorsScript : MonoBehaviour {
 	bool doorOpen = false;
 	AudioSource  aud;
 
-	float Distance = 2.0f;
+	float Distance = 3.0f;
 	void Start()
 	{   //Do not fuck with
 		player = GameObject.FindWithTag ("Player");

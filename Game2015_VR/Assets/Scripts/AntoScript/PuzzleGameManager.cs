@@ -5,6 +5,10 @@ using UnityEngine;
 public class PuzzleGameManager : MonoBehaviour {
 	public int PuzzleNum=0;
 	[SerializeField] GameObject key;
+	[SerializeField] GameObject framePicture;
+	[SerializeField] GameObject blackFrame;
+	[SerializeField] GameObject scroll;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,6 +19,9 @@ public class PuzzleGameManager : MonoBehaviour {
 		if(PuzzleNum==5)
 		{
 			key.SetActive (true);
+			blackFrame.SetActive(false);
+			framePicture.SetActive(true);
+			scroll.SetActive(true);
 		}
 	}
 

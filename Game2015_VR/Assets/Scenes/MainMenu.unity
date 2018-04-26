@@ -1175,6 +1175,10 @@ Prefab:
       propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1689472052131692, guid: cb16feaa925bb9a44b0a258437c24d05, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb16feaa925bb9a44b0a258437c24d05, type: 2}
   m_IsPrefabParent: 0
@@ -1416,9 +1420,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 79d6f3d60309a8a4f8ff868eeee64fc1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0a0f19ed6b593894eaa51c0b4c730c85, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.213
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1818,7 +1822,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Revelations:'
+  m_Text: Revelations
 --- !u!222 &689822513
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6807,13 +6811,14 @@ GameObject:
   - component: {fileID: 1642480922}
   - component: {fileID: 1642480921}
   - component: {fileID: 1642480920}
+  - component: {fileID: 1642480924}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1642480919
 Transform:
   m_ObjectHideFlags: 0
@@ -6931,15 +6936,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bae787969418e80429254d7b1af0eeb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UIscript: {fileID: 0}
   MovementSpeed: 10
   RotationSpeed: 2
   speed: 90
   myHand: {fileID: 1521531867}
   laserPointer: {fileID: 2012719722}
   playerCamera: {fileID: 94655942}
+  hitPoints: 100
+  counterAttackDamage: 20
   Lazer: {fileID: 1642480920}
   DistanceHand: 0.4
   isSneaking: 0
+  isWalking: 0
+  isSnared: 0
   Distance: 10
 --- !u!136 &1642480922
 CapsuleCollider:
@@ -6971,6 +6981,86 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!82 &1642480924
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642480918}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b88693ddf6166f345a22b2b39f323aab, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.09
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1653314619
 GameObject:
   m_ObjectHideFlags: 0
@@ -8229,6 +8319,10 @@ Prefab:
     - target: {fileID: 422190, guid: c8db57f0abb7a254f8642a837e197691, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 122194, guid: c8db57f0abb7a254f8642a837e197691, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8db57f0abb7a254f8642a837e197691, type: 2}

@@ -16,10 +16,10 @@ public class GramphoneIntro : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (OVRInput.Get (OVRInput.Axis1D.SecondaryHandTrigger) >= 1 && music) 
+		if ((Input.GetMouseButtonDown(0) || OVRInput.Get (OVRInput.Axis1D.SecondaryHandTrigger) >= 1) && music) 
 		{
 			playerMusic.Stop ();
-			BackgroundMusic.Stop ();
+			//BackgroundMusic.Stop ();
 			BackgroundMusic = this.gameObject.GetComponent<AudioSource> ();
 			BackgroundMusic.Play ();
 		}

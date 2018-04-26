@@ -14,7 +14,7 @@ public class mainMenu : MonoBehaviour {
 	void Update () {
 
 
-		if (OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) >= 1.0f && doorClosed) {
+		if ((Input.GetMouseButtonDown(0) ||OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) >= 1.0f) && doorClosed) {
 			
 			SceneManager.LoadScene ("Main");
 

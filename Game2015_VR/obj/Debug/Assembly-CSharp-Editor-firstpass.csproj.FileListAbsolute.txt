@@ -138,3 +138,4 @@ C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_Gi
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\obj\Debug\Assembly-CSharp-Editor-firstpass.dll
 C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
+C:\Users\spawn\Desktop\GBC\W2018\GAME2015 VIRTUAL REALITY DEVELOPMENT\UnityVR_GitHub\Unity_VR_Game\Game2015_VR\Temp\bin\Debug\Facebook.Unity.Settings.dll

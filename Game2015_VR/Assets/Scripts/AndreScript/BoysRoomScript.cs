@@ -7,6 +7,9 @@ public class BoysRoomScript : riddlePuzzle {
 	bool doorOpen = true;
 
 	[SerializeField] GameObject starObj;
+	[SerializeField] GameObject framePicture;
+	[SerializeField] GameObject blackFrame;
+	[SerializeField] GameObject scroll;
 	// Objects
 	private GameObject starFrame;
 	private GameObject boyDoor;
@@ -48,6 +51,9 @@ public class BoysRoomScript : riddlePuzzle {
 		if (sunCheck == true && moonCheck == true && starCheck == true && doorOpen == false) {
 			doorOpen = true;
 			boyDoor.transform.Rotate(0.0f, -90.0f, 0.0f);
+			blackFrame.SetActive(false);
+			framePicture.SetActive(true);
+			scroll.SetActive(true);
 			puzzleComplete.Play ();
 		}
 	}

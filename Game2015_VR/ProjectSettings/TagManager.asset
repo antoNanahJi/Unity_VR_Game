@@ -18,6 +18,11 @@ TagManager:
   - scroll1Final
   - Door
   - Letter
+  - dontmove
+  - listlast
+  - LoganScroll
+  - LoganPainting
+  - LoganPaintingDark
   layers:
   - Default
   - TransparentFX

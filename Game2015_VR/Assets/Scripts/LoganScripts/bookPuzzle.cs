@@ -37,11 +37,11 @@ public class bookPuzzle : MonoBehaviour {
 			complete.Play ();
 			Instantiate (scroll3,scroll3.transform.position ,scroll3.transform.rotation);
 		}
-		if (_collision.gameObject.name == "bookSpot3") 
+		if (_collision.gameObject.name == "bookSpot4") 
 		{
 			Debug.Log ("placed book3");
 			complete.Play ();
-			Instantiate (scroll3,scroll3.transform.position ,scroll3.transform.rotation);
+			Instantiate (scroll4,scroll4.transform.position ,scroll4.transform.rotation);
 		}
 	}
 

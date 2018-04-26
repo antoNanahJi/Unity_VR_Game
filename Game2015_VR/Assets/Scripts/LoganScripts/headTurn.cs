@@ -7,8 +7,8 @@ public class headTurn : MonoBehaviour {
 	GameObject playerObj;
 	private Vector3 directionVector;
 	private float   distanceToPlayer;
-	private float   minimunDistanceToRotate = 10.0f;
-	private float   rotationSpeed = 10.0f;
+	private float   minimunDistanceToRotate = 20.0f;
+	private float   rotationSpeed = 60.0f;
 	private Quaternion destRot;
 
 	// Use this for initialization
